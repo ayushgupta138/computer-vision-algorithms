@@ -22,7 +22,10 @@ void sharpen(unsigned char* img, int width, int height)
 			for (int l = -1; l <= 1; l++)
 				for (int r = -1; r <= 1; r++)
 					val += padded_img[(width + 2) * (i + 1 + l) + (j + 1 + r)] * sharpen_filter[l + 1][r + 1];
-			val = abs(val);
+			if (val > 255)
+				val = 255;
+			if (val < 0)
+				val = 0;
 			img[width * i + j] = val;
 		}
 }

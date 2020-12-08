@@ -1,0 +1,5 @@
+﻿  filter_applications.cpp
+E:\autumn\Computer_architechture\cv_filters\filter_applications\Sobel_Naive.h(27,48): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
+E:\autumn\Computer_architechture\cv_filters\filter_applications\mean_blur.h(24,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
+E:\autumn\Computer_architechture\cv_filters\filter_applications\Sharpen.h(26,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
+  filter_applications.vcxproj -> E:\autumn\Computer_architechture\cv_filters\filter_applications\x64\Debug\filter_applications.exe

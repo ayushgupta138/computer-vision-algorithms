@@ -5,11 +5,11 @@
 using namespace std;
 using namespace cv;
 
-void sobel_naive(unsigned char * img,int width,int height)
+void sobel_naive(unsigned char * img,int width,int height,double * angle)
 {
 	int sobel_filterx[3][3] = { 1,0,-1,2,0,-2,1,0,-1 };
 	int sobel_filtery[3][3] = { 1,2,1,0,0,0,-1,-2,-1 };
-	int hor,ver;
+	double hor,ver;
 	unsigned char* padded_img = (unsigned char*)malloc((long long)(width+2) * (height+2) * sizeof(unsigned char));
 	for (int i = 1; i <= height; i++)
 		for (int j = 1; j <= width; j++)
@@ -25,5 +25,6 @@ void sobel_naive(unsigned char * img,int width,int height)
 				    ver += padded_img[(width + 2) * (i + 1 + l) + (j + 1 + r)] * sobel_filtery[l + 1][r + 1];
 				}
 			img[width*i+j] = sqrt(hor * hor + ver * ver)/4;
+			angle[i * width + j] = atan(ver / hor)*(180/3.1415); // convert to degrees
 		}
 }

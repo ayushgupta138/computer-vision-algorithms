@@ -27,6 +27,12 @@
     <ClInclude Include="Sharpen.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Gaussian_Blur.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Canny.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="computer-vision.cpp">

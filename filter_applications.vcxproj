@@ -154,6 +154,8 @@
     <ClCompile Include="computer-vision.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Gaussian_Blur.h" />
+    <ClInclude Include="Canny.h" />
     <ClInclude Include="Sharpen.h" />
     <ClInclude Include="mean_blur.h" />
     <ClInclude Include="Laplacian.h" />

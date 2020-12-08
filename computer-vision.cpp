@@ -7,6 +7,8 @@
 #include "Laplacian.h"
 #include "mean_blur.h"
 #include "Sharpen.h"
+#include "Gaussian_Blur.h"
+#include "Canny.h"
 
 using namespace std;
 using namespace cv;
@@ -20,18 +22,21 @@ int main()
         cin.get();
         return -1;
     }
-    String windowname = "Building_gray",edgewindow="Edge",blurwindow="Blur";
+    String windowname = "Building_gray",edgewindow="Edge",blurwindow="canny";
     Mat gray;
     Mat gray1;
     cvtColor(img, gray, COLOR_BGR2GRAY);
     cvtColor(img, gray1, COLOR_BGR2GRAY);
+    int width = gray.cols;
+    int height = gray.rows;
     namedWindow(windowname);
     namedWindow(edgewindow);
     namedWindow(blurwindow);
     imshow(windowname, gray1);
-    sobel_naive(gray.data,gray.cols,gray.rows);
+    double* angle = (double*)malloc(height * width * sizeof(double));
+    sobel_naive(gray.data,width,height,angle);
     imshow(edgewindow,gray);
-    sharpen(gray1.data, gray1.cols, gray1.rows);
+    canny(gray1.data, width, height);
     imshow(blurwindow, gray1);
     waitKey(0);
     destroyWindow(windowname);

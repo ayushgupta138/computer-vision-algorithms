@@ -15,7 +15,7 @@ using namespace cv;
 
 int main()
 {
-    Mat img = imread("tig.jpg"); // performing sobel only for one image 
+    Mat img = imread("sud.jpg"); // performing sobel only for one image 
     if (img.empty())
     {
         cout << "Image could not be located.\n";

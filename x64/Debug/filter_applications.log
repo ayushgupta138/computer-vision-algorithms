@@ -1,6 +1,6 @@
-﻿  filter_applications.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (filter_applications.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  computer-vision.cpp
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Sobel_Naive.h(27,48): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\mean_blur.h(24,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Sharpen.h(29,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
-  LINK : E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\x64\Debug\filter_applications.exe not found or not built by the last incremental link; performing full link
-  filter_applications.vcxproj -> E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\x64\Debug\filter_applications.exe
+  filter_applications.vcxproj -> E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\x64\Debug\computer-vision.exe

@@ -4,4 +4,5 @@ E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Sobel_Nai
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\mean_blur.h(24,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Sharpen.h(29,25): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
 E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Gaussian_Blur.h(23,28): warning C4244: '=': conversion from 'double' to 'unsigned char', possible loss of data
+E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\Canny.h(48,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   filter_applications.vcxproj -> E:\autumn\Computer_architechture\cv_filters\computer-vision-algorithms\x64\Debug\computer-vision.exe
